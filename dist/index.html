@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"> </script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"> </script>
+    <title>Cedro Test</title>
+  </head>
+  <body>
+    <svg viewbox="0 0 91 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display: none">
+      <style>:root>svg{display:none}:root>svg:target{display:block}</style>
+      <svg id="Cedro-logo" fill="none" viewbox="0 0 91 32" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M75.337 9h2.806c4.104 0 7.12 2.999 7.12 7 0 4-3.02 6.998-7.12 6.998h-2.806c-4.108 0-7.135-3-7.135-6.998s3.027-7 7.135-7Zm0 11.866h2.806c2.793 0 4.864-2.082 4.864-4.871 0-2.79-2.076-4.871-4.864-4.871h-2.806c-2.797 0-4.881 2.1-4.881 4.87 0 2.772 2.089 4.872 4.88 4.872Zm-56.302-3.1c-.605 1.915-2.206 3.077-4.273 3.077h-2.81c-2.707 0-4.694-2.024-4.694-4.838s1.987-4.849 4.694-4.849h2.81c2.002 0 3.58 1.085 4.23 2.884h2.244c-.71-3.038-3.273-5.025-6.474-5.025h-2.81c-4 0-6.952 2.955-6.952 6.99s2.951 6.982 6.952 6.982h2.81c3.254 0 5.82-2.043 6.521-5.217l-2.248-.004Zm6.808 2.89v-3.777h7.94v-2.03h-7.94v-3.525h8.441v-2.07H23.622v13.491h10.874v-2.09h-8.653ZM37.17 9.254h7.58c3.977 0 6.854 2.829 6.854 6.742s-2.882 6.75-6.853 6.75h-7.58V9.253Zm2.221 11.426h5.293c2.732 0 4.652-1.958 4.652-4.684s-1.92-4.675-4.652-4.675h-5.293v9.359Zm24.2-3.24a4.09 4.09 0 0 0 2.75-3.918c0-2.487-1.935-4.268-4.54-4.268h-8.077v13.491h2.221v-4.993h5.37l2.904 4.993h2.492l-3.12-5.304Zm-1.92-1.758h-5.726v-4.358h5.726c1.464 0 2.411.927 2.411 2.18 0 1.251-.94 2.178-2.411 2.178Z" fill="#D0BC7A"></path>
+      </svg>
+    </svg>
+    <header class="header"> 
+      <div class="container header__container"><a class="header__logo" href="#"> 
+          <svg>
+            <use xlink:href="#Cedro-logo"></use>
+          </svg></a>
+        <div class="header__left-side">
+          <div class="header__contact contact"><a class="contact__link text-14" href="tel:+78005553535"> 
+              <svg class="contact__icon header__icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.66375 6H6.1579C6.1579 6 5.80262 8.74333 6.1579 10.4408C6.59925 12.5495 7.10164 13.8516 8.62501 15.375C10.1484 16.8984 11.4505 17.4007 13.5592 17.8421C15.2567 18.1974 18 17.8421 18 17.8421V15.3363C18 14.4754 17.4491 13.7111 16.6325 13.4389L15.5094 13.0645C15.2293 12.9712 14.9209 13.069 14.7459 13.3069C14.1043 14.1787 12.8226 14.2379 12.1034 13.4288L10.6653 11.8109C10.0139 11.0782 10.0561 9.96226 10.7609 9.28078C10.9633 9.08506 11.0355 8.79056 10.9464 8.52344L10.5611 7.36754C10.2889 6.55086 9.52461 6 8.66375 6Z" stroke="#D0BC7A" stroke-width="1.5"></path>
+              </svg><span class="mobile-hidden">8 (800) 555-35-35 </span></a></div>
+          <div class="header__actions actions"> <a class="actions__btn actions__btn--fav" href="#">
+              <svg class="actions__icon header__icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.9205 7.06089C17.5784 6.72455 17.1722 6.45775 16.7252 6.27572C16.2782 6.09369 15.799 6 15.3151 6C14.8312 6 14.3521 6.09369 13.905 6.27572C13.458 6.45775 13.0518 6.72455 12.7098 7.06089L11.9998 7.75857L11.2899 7.06089C10.5989 6.38184 9.66172 6.00035 8.68453 6.00035C7.70733 6.00035 6.77016 6.38184 6.07917 7.06089C5.38819 7.73994 5 8.66092 5 9.62124C5 10.5816 5.38819 11.5026 6.07917 12.1816L6.78911 12.8793L11.9998 18L17.2105 12.8793L17.9205 12.1816C18.2627 11.8454 18.5342 11.4463 18.7194 11.007C18.9047 10.5677 19 10.0968 19 9.62124C19 9.14571 18.9047 8.67484 18.7194 8.23552C18.5342 7.79621 18.2627 7.39706 17.9205 7.06089V7.06089Z" stroke="#D0BC7A" stroke-width="1.5"></path>
+              </svg><span class="actions__label"></span></a>
+            <button class="actions__btn actions__btn--personal btn-reset"> 
+              <svg class="actions__icon header__icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.25023 9.40069C9.25023 7.92539 10.4695 6.70837 11.9998 6.70837C13.5301 6.70837 14.7494 7.92539 14.7494 9.40069C14.7494 10.876 13.5301 12.093 11.9998 12.093C10.4695 12.093 9.25023 10.876 9.25023 9.40069ZM11.9998 5.20837C9.66456 5.20837 7.75023 7.07371 7.75023 9.40069C7.75023 11.7277 9.66456 13.593 11.9998 13.593C14.3351 13.593 16.2494 11.7277 16.2494 9.40069C16.2494 7.07371 14.3351 5.20837 11.9998 5.20837ZM8.375 18.6657C8.375 17.1787 9.58039 15.9734 11.0673 15.9734H12.9317C14.4186 15.9734 15.624 17.1787 15.624 18.6657H17.124C17.124 16.3503 15.247 14.4734 12.9317 14.4734H11.0673C8.75196 14.4734 6.875 16.3503 6.875 18.6657H8.375Z" fill="#D0BC7A"></path>
+              </svg>
+            </button>
+          </div>
+          <div class="header__burger burger"><span class="burger__line"> </span><span class="burger__line"> </span></div>
+        </div>
+        <div class="header__menu"> 
+          <div class="header__nav nav">
+            <h3 class="nav__title header-24">Продукция</h3>
+            <ul class="nav__list list-reset text-16">
+              <li class="nav__item"><a class="nav__link" href="#">Пигменты</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Пигменты</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Аппараты</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Иглы</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Расходные материалы</a></li>
+            </ul>
+          </div>
+          <div class="header__nav nav">
+            <h3 class="nav__title header-24">Компания</h3>
+            <ul class="nav__list list-reset text-16">
+              <li class="nav__item"><a class="nav__link" href="#">Блог</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Обучение</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Стать представителем</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Политика конфиденциальности</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="profile"> 
+        <div class="container profile__container">
+          <div class="profile__nav profile-nav profile__left text-14"> 
+            <ul class="profile-nav__list list-reset"> 
+              <li class="profile-nav__item active"><a class="profile-nav__link" href="#">Профиль</a></li>
+              <li class="profile-nav__item"><a class="profile-nav__link" href="#">Мои заказы</a></li>
+              <li class="profile-nav__item"><a class="profile-nav__link" href="#">выход</a></li>
+            </ul>
+          </div>
+          <div class="profile__right">
+            <h1 class="profile__title">Профиль</h1>
+            <div class="profile__form form">
+              <h3 class="form__title header-24">Данные профиля</h3>
+              <form class="text-16" action=""> 
+                <div class="form__field"> 
+                  <label class="form__label">ФИО</label>
+                  <input class="form__input" type="text" id="name" placeholder="Введите ваше имя">
+                </div>
+                <div class="form__field"> 
+                  <label class="form__label">Почта</label>
+                  <input class="form__input" type="email" id="email" placeholder="Адрес электронной почты">
+                </div>
+                <div class="form__field"> 
+                  <label class="form__label">Телефон</label>
+                  <input class="form__input" type="text" id="phone" placeholder="+7 (999) 999-99-99">
+                </div>
+              </form>
+            </div>
+            <div class="profile__save">
+              <button class="profile__btn text-16 btn-reset">Сохранить изменения</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="trands">
+        <div class="container trands__container">
+          <div class="trands__top"> 
+            <h2 class="trands__title header-48"><span>Тренды</span> сезона</h2><a class="trands__link text-16 mobile-hidden" href="#"> <span>Перейти в&nbsp;каталог </span>
+              <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.75" y="0.75" width="14.5" height="14.5" rx="7.25" stroke="#21242E" stroke-width="1.5"></rect>
+                <path d="M7.24475 11L10.2448 8L7.24475 5" stroke="#21242E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg></a>
+          </div>
+          <div class="trands__swiper swiper">
+            <ul class="swiper-wrapper list-reset"></ul>
+          </div><a class="trands__link text-16 desktop-hidden" href="#"> <span>Перейти в&nbsp;каталог </span>
+            <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="0.75" y="0.75" width="14.5" height="14.5" rx="7.25" stroke="#21242E" stroke-width="1.5"></rect>
+              <path d="M7.24475 11L10.2448 8L7.24475 5" stroke="#21242E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg></a>
+        </div>
+      </section>
+    </main>
+    <script src="./js/app.js" type="module">  </script>
+  </body>
+</html>
